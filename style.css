@@ -1,7 +1,117 @@
-h1{
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+        font-family: "Roboto Condensed", sans-serif;
+        background-color: #ffb861;
 }
-
-p{
-    font-size: 18px;
+.menu-cont{
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        background-color: orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        top: 0px;
+        left: 0;
+        z-index: 10;
+}
+.katalog{
+        display: grid;
+        margin-top: 50px;
+        grid-template-columns: repeat(3, 400px);
+        gap: 100px;
+        justify-content: center;
+}
+.reasons{
+        display: grid;
+        margin-top: 50px;
+        grid-template-columns: repeat(3, 400px);
+        gap: 100px;
+        justify-content: center;
+}
+.card{
+        height: 600px;
+        background-color: orange;
+        padding: 20px;
+        border: solid 2px;
+        border-radius: 30px;
+}
+.card-flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+.reason{
+        height: 600px;
+        background-color: orange;
+        text-align: center;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: solid 2px;
+        border-radius: 30px;
+}
+.logo{
+        display: flex;
+        align-items: center;
+}
+.title{
+        position: absolute;
+        left: 75px;
+}
+.img_menu{
+        position: absolute;
+        width: 60px;
+        height: 70px;
+        left: 10px;
+}
+.title-center{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* position: sticky; */
+        /* top: 1px; */
+}
+.text_cont{
+        width: 100%;
+        height: 550px;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+}
+.text_blocks{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+}
+.block_text{
+        width: 600px;
+        height: 400px;
+        background-color: aqua;
+}
+.block_one{
+        position: relative;
+}
+.block_two{
+        position: relative;
+        top: 100px;
+        right: 500px;
+}
+.block_three{
+        position: relative;
+        top: 200px;
+        right: 1000px;
+}
+.text_text{
+        width: 500px;
+        position: absolute;
+        font-size: 50px;
+        right: 700px;
+        bottom: -150px;
 }
